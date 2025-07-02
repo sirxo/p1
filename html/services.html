@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Станислав Олегович</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();
+     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+     ym(102748296, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/102748296" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</head>
+<body>
+	<div id="preloader">
+  <div class="loader"></div>
+</div>
+
+  <div class="container">
+    <header>
+	<nav class="main-nav">
+  <a href="index.html">Главная</a>
+  <a href="services.html">Услуги</a>
+  <a href="portfolio.html">Портфолио</a>
+  <a href="contacts.html">Контакты</a>
+</nav>
+
+      <img src="ava.jpg" alt="Станислав Олегович" class="avatar">
+      <h1>Станислав Олегович</h1>
+      <p class="tagline">Специалист технической поддержки</p>
+    </header>
+
+	<section id="services">
+	<h2>Услуги</h2>
+	<ul class="services-list">
+		<li>🛠 Установка и активация Windows</li>
+		<li>📦 Установка драйверов и программ</li>
+		<li>🧼 Чистка от пыли и замена термопасты</li>
+		<li>💻 Сборка и апгрейд ПК</li>
+		<li>🔧 Ремонт компьютеров</li>
+		<li>🌐 Удалённая помощь и выезд в СПб</li>
+	</ul>
+	</section>
+
+    <section id="form-block">
+		<h2>
+		   Если вам нужна помощь с компьютером — оставьте заявку ниже. <br>
+	</h2>
+    Пожалуйста, указывайте номер телефона, иначе я не смогу с вами связаться.
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="tel" name="phone" placeholder="+7XXXXXXXXXX" required pattern="\+7\d{10}" title="Введите номер в формате +7XXXXXXXXXX">
+        <textarea name="message" maxlength="280" placeholder="Описание (до 280 символов)" required></textarea>
+        <button type="submit" class="submit-btn">Отправить</button>
+      </form>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Станислав Олегович — Санкт-Петербург
+    </footer>
+  </div>
+
+  <script  src="./script.js">
+  </script>
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.pointerEvents = "none";
+    setTimeout(() => preloader.remove(), 300);
+  });
+</script>
+
+</body>
+</html>
